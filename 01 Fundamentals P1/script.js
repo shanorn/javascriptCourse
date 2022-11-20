@@ -31,6 +31,8 @@ let job2 = 'Teacher';
 console.log(myFirstJob);
 */
 
+/* Lecture: Data Types
+
 let javascriptIsFun = true;
 console.log(javascriptIsFun);
 
@@ -55,3 +57,21 @@ console.log(year);
 console.log(typeof year);
 
 console.log(typeof null);
+*/
+
+/* let, const and var 
+let age = 30;
+age = 31; 
+
+const birthYear = 1991;
+// Assignment to constant variable
+//birthYear = 1990;
+
+// Missing initializer in const declaration
+//const job; 
+
+var job = 'programmer';
+job = 'teacher';
+
+console.log(job);
+*/

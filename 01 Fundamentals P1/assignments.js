@@ -1,6 +1,6 @@
 // Lecture: Values and Variables
-let country = 'Spain';
-let continent = 'Europe';
+const country = 'Spain';
+const continent = 'Europe';
 let population = 47.33;
 
 console.log(country);
@@ -11,10 +11,16 @@ console.log('I live in ' + country + ' (' + continent + ') and it has ' + popula
 
 
 // Lecture: Data Types
-let isIsland = false;
+const isIsland = false;
 let language;
 
 console.log(typeof isIsland);
 console.log(typeof population);
 console.log(typeof country);
 console.log(typeof language);
+
+// Lecture: let, const and var
+language = 'Spanish';
+
+// Example error: Assigment to constant variable
+isIsland = true; 
