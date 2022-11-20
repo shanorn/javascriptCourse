@@ -23,4 +23,19 @@ console.log(typeof language);
 language = 'Spanish';
 
 // Example error: Assigment to constant variable
-isIsland = true; 
+// isIsland = true; 
+
+
+//Lecture Basic Orperators
+population /= 2;
+console.log(population);
+population++;
+console.log(population);
+
+const findlandPopulation = 6;
+console.log(population > findlandPopulation);
+const avgPopulation = 33;
+console.log(population < avgPopulation);
+
+const description = country + ' is in ' + continent + ', and its ' + population + ' million people speak ' + language;
+console.log(description);
