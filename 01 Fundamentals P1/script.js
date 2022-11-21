@@ -235,7 +235,7 @@ if (height) {
 }
 */
 
-/* Equality Operators */ 
+/* Equality Operators  
 
 const age = 18;
 if (age === 18) console.log('Exactly 18 (strict)');
@@ -264,3 +264,32 @@ if (favorite === 23) {
 }
 
 if (favorite !== 23) console.log("Why not 23?");
+*/
+
+/* Basic Boolean Logic */
+
+const hasDriversLicense = true; // A
+const hasGoodVision = true; // B
+
+console.log(hasDriversLicense);
+console.log(hasGoodVision);
+console.log(hasDriversLicense && hasGoodVision);
+console.log(hasDriversLicense || hasGoodVision);
+console.log(!hasDriversLicense);
+
+const shouldDrive = hasDriversLicense && hasGoodVision;
+
+if (shouldDrive) {
+    console.log('Sarah is able to drive!')
+} else {
+    console.log('Someone else should drive...');
+}
+
+const isTired = true; // C
+console.log(hasDriversLicense && hasGoodVision && isTired);
+
+if (hasDriversLicense && hasGoodVision && !isTired) {
+    console.log('Sarah is able to drive!')
+} else {
+    console.log('Someone else should drive...');
+}
