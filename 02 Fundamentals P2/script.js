@@ -228,7 +228,7 @@ console.log(cristianArray);
 console.log(cristian);
 */
 
-/* Dots VS Bracket Notation */
+/* Dots VS Bracket Notation 
 const cristian = {
     firstName: 'Cristian',
     lastName: 'Castillo',
@@ -264,3 +264,37 @@ console.log(cristian);
 
 const text = `${cristian.firstName} has ${cristian.friends.length} friends, and his best friend is called ${cristian.friends[0]}`;
 console.log(text);
+*/
+
+/*  Object methods */
+const cristian = {
+    firstName: 'Cristian',
+    lastName: 'Castillo',
+    birthYear: 1989,
+    job: 'developer',
+    friends: ['Paco', 'Sergio', 'Castello'],
+    hasDriversLicense: false,
+
+    // calcAge: function () {
+    //     //console.log(this);
+    //     return 2022 - this.birthYear;
+    // }
+    calcAge: function () {
+        this.age = 2022 - this.birthYear;
+        return this.age;
+    },
+
+    getSummary: function() {
+        return `${this.firstName} is a ${this.calcAge()}-year old ${this.job} and he has ${this.hasDriversLicense ? 'a': 'no'} driver's license`;
+    }
+};
+
+// console.log(cristian.age);
+// console.log(cristian.age);
+// console.log(cristian.age);
+// console.log(cristian['calcAge']());
+
+// Challenge
+// "Jonas is a 46-year old teacher, an he has (NO) a driver's license"
+
+console.log(cristian.getSummary());
