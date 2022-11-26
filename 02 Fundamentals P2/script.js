@@ -84,7 +84,7 @@ console.log(yearsUntilRetirement(1992, 'Merces'));
 */
 
 
-/* Function calling others functions */
+/* Function calling others functions 
 
 
 function cutFruitPieces(fruit){
@@ -99,3 +99,27 @@ function fruitProcessor(apples, oranges) {
 }
 
 console.log(fruitProcessor(2, 3));
+*/
+
+/* Reviewing Functions */
+
+const calAge = function (birthYear){
+    return 2022 - birthYear;
+}
+
+const yearsUntilRetirement = function (birthYear, firstName)  {
+    const age = calAge(birthYear);
+    const retirement = 65 - age;
+
+    if (retirement > 0) {
+        console.log(`${firstName} retires in ${retirement} years`);
+        return retirement;
+    } else {
+        console.log(`${firstName} retires in ${retirement} years`);
+        return -1;
+    }
+}
+
+console.log(yearsUntilRetirement(1989, 'Cristian'));
+console.log(yearsUntilRetirement(1950, 'Mike'));
+console.log(yearsUntilRetirement(1992 , 'Merces'));
