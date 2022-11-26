@@ -126,7 +126,7 @@ console.log(yearsUntilRetirement(1992 , 'Merces'));
 
 */
 
-/* Introduction to Arrays */
+/* Introduction to Arrays 
 const friend1 = 'Michael';
 const friend2 = 'Steven';
 const friend3 = 'Peter';
@@ -165,3 +165,42 @@ console.log(age1, age2, age3, age4);
 
 const ages = [calcAge(years[0]), calcAge(years[1])]; 
 console.log(ages);
+*/
+
+/* Basic Array Operations */
+
+// Add elements
+// push añade elemento al final del array
+const friends = ['Michael', 'Steven', 'Peter'];
+let newLenth = friends.push('Jay');
+console.log(friends);
+console.log(newLenth);
+
+// unshift añade elemento al principio del array
+newLenth = friends.unshift('John');
+console.log(friends);
+console.log(newLenth);
+
+
+// Remove elements
+friends.pop(); // Last
+const popped = friends.pop();
+console.log(popped);
+console.log(friends);
+
+const shifted = friends.shift(); // First
+console.log(shifted);
+console.log(friends);
+
+
+console.log(friends.indexOf('Steven'));
+console.log(friends.indexOf('Bob'));
+
+friends.push(23);
+console.log(friends.includes('Steven'));
+console.log(friends.includes('Boc'));
+console.log(friends.includes('23')); // Strict iguality === 
+
+if (friends.includes('Steven')){
+    console.log('You have a friend called Steven')
+}
