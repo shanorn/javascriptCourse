@@ -167,7 +167,7 @@ const ages = [calcAge(years[0]), calcAge(years[1])];
 console.log(ages);
 */
 
-/* Basic Array Operations */
+/* Basic Array Operations 
 
 // Add elements
 // push añade elemento al final del array
@@ -204,3 +204,6 @@ console.log(friends.includes('23')); // Strict iguality ===
 if (friends.includes('Steven')){
     console.log('You have a friend called Steven')
 }
+*/
+
+/* Introduction to objects */
