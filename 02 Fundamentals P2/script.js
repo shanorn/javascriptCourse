@@ -12,7 +12,7 @@ const private = 534;
 
 */
 
-/* Functions */
+/* Functions 
 
 function logger(){
     console.log('My name is Cristian');
@@ -37,3 +37,22 @@ const appleOrangeJuice = fruitProcessor(2, 4);
 console.log(appleOrangeJuice);
 
 const num = Number('23');
+*/
+
+/* Function declarations vs Expressions */ 
+
+// Function declaration 
+function calAge1(birthYear) {
+    return 2037 - birthYear;
+}
+const age = calAge1(1989);
+
+
+// Function expression
+const calcAge2 = function (birthYear){
+    return 2037 - birthYear;
+}
+const age2 = calcAge2(1989);
+
+
+console.log(age, age2);
