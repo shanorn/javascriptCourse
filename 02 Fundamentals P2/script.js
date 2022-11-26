@@ -207,3 +207,24 @@ if (friends.includes('Steven')){
 */
 
 /* Introduction to objects */
+
+const cristianArray = [
+    'Cristian',
+    'Castillo',
+    2022 - 1989,
+    'developer',
+    ['Paco', 'Sergio', 'Castello']
+];
+
+const cristian = {
+    firstName: 'Cristian',
+    lastName: 'Castillo',
+    age: 2022 - 1989,
+    job: 'developer',
+    friends: ['Paco', 'Sergio', 'Castello']
+};
+
+console.log(cristianArray);
+console.log(cristian);
+
+/* Dots VS Bracket Notation */
