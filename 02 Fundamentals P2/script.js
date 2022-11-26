@@ -206,7 +206,7 @@ if (friends.includes('Steven')){
 }
 */
 
-/* Introduction to objects */
+/* Introduction to objects 
 
 const cristianArray = [
     'Cristian',
@@ -226,5 +226,41 @@ const cristian = {
 
 console.log(cristianArray);
 console.log(cristian);
+*/
 
 /* Dots VS Bracket Notation */
+const cristian = {
+    firstName: 'Cristian',
+    lastName: 'Castillo',
+    age: 2022 - 1989,
+    job: 'developer',
+    friends: ['Paco', 'Sergio', 'Castello']
+};
+
+console.log(cristian);
+
+console.log(cristian.lastName);
+console.log(cristian['lastName']);
+
+const nameKey = 'Name';
+console.log(cristian['first' + nameKey]);
+console.log(cristian['last' + nameKey]);
+
+const interestedIn = prompt("What do you want to know about Jonas? Choose between firstName, lastName, age, job, and friends");
+
+if (cristian[interestedIn]) {
+    console.log(cristian[interestedIn]);
+} else { 
+    console.log('Wrong Request! Choose between firstName, lastName, age, job, and friends');
+}
+
+cristian.location = 'Martos';
+cristian['twitter'] = '@shanorn';
+console.log(cristian);
+
+
+// Challenge
+// "Jonas has 3 friends, and his best friend is called Michael"
+
+const text = `${cristian.firstName} has ${cristian.friends.length} friends, and his best friend is called ${cristian.friends[0]}`;
+console.log(text);
