@@ -301,7 +301,7 @@ console.log(cristian.getSummary());
 
 */
 
-/* Iteration: The for Loop */
+/* Iteration: The for Loop 
 
 // console.log('Repetitive text 1');
 // console.log('Repetitive text 2');
@@ -317,4 +317,50 @@ console.log(cristian.getSummary());
 // for loop keeps runing while condition is TRUE
 for (let rep = 1; rep <= 10 ; rep++) {
     console.log(`Repetitive text ${rep}`);
+}
+*/
+
+/* Looping Arrays, Breaking and Continuing */
+const cristianArray = [
+    'Cristian',
+    'Castillo',
+    2022 - 1989,
+    'developer',
+    ['Paco', 'Sergio', 'Castello'],
+    true
+];
+const types = [];
+
+for (let i = 0; i < cristianArray.length; i++) {
+    // Reading from array
+    console.log(cristianArray[i], typeof cristianArray[i]);
+
+    // Filling types array
+    //types[i] = typeof cristianArray[i];
+    types.push(typeof cristianArray[i]);
+}
+
+console.log(types);
+
+const years = [1991, 2007, 1969, 2020]
+const ages = [];
+
+const calcAge = birthyear => 2022 - birthyear;
+for (let i = 0; i < years.length ; i++) {
+    ages[i] = calcAge(years[i]);
+}
+
+console.log(years, ages);
+
+// continue and break
+console.log('--- ONLY STRINGS ---');
+for (let i = 0; i < cristianArray.length; i++) {
+    if (typeof cristianArray[i] !== 'string') continue;
+    console.log(cristianArray[i], typeof cristianArray[i]);
+}
+
+console.log('--- BREAK WITH NUMBER ---');
+for (let i = 0; i < cristianArray.length; i++) {
+    if (typeof cristianArray[i] === 'number') break;
+    console.log(cristianArray[i], typeof cristianArray[i]);
 }
