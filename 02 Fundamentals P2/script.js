@@ -266,7 +266,7 @@ const text = `${cristian.firstName} has ${cristian.friends.length} friends, and 
 console.log(text);
 */
 
-/*  Object methods */
+/*  Object methods 
 const cristian = {
     firstName: 'Cristian',
     lastName: 'Castillo',
@@ -298,3 +298,23 @@ const cristian = {
 // "Jonas is a 46-year old teacher, an he has (NO) a driver's license"
 
 console.log(cristian.getSummary());
+
+*/
+
+/* Iteration: The for Loop */
+
+// console.log('Repetitive text 1');
+// console.log('Repetitive text 2');
+// console.log('Repetitive text 3');
+// console.log('Repetitive text 4');
+// console.log('Repetitive text 5');
+// console.log('Repetitive text 6');
+// console.log('Repetitive text 7');
+// console.log('Repetitive text 8');
+// console.log('Repetitive te xt 9');
+// console.log('Repetitive text 10');
+
+// for loop keeps runing while condition is TRUE
+for (let rep = 1; rep <= 10 ; rep++) {
+    console.log(`Repetitive text ${rep}`);
+}
