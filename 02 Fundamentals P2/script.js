@@ -366,7 +366,7 @@ for (let i = 0; i < cristianArray.length; i++) {
 }
 */
 
-/*  Looping Backwards and Loops in Loops */
+/*  Looping Backwards and Loops in Loops 
 const cristianArray = [
     'Cristian',
     'Castillo',
@@ -388,5 +388,50 @@ for (let exercise = 1; exercise <= 3; exercise++) {
         console.log(`------- Rep ${rep} of exercise ${exercise}`);
     }
 }
+*/
 
 /* The while Loop */
+
+// for (let rep = 1; rep <= 10 ; rep++) {
+//     console.log(`Repetitive text ${rep}`);
+// }
+
+let rep = 1; 
+while (rep <= 10) {
+    //console.log(`Repetitive text ${rep}`);
+    rep++;
+}
+
+let dice = Math.trunc(Math.random() * 6) + 1;
+//console.log(dice);
+while (dice !== 6){
+    console.log(`You rolled a ${dice}`);
+    dice = Math.trunc(Math.random() * 6) + 1;
+    if (dice === 6) console.log(`Finally you rolled a ${dice}!`);
+}
+
+
+// RANDOM MACHINE STATS
+
+// let repeticion = 0;
+// let repToSix = [];
+
+// while (repeticion <= 100000000){
+//     let dice = Math.trunc(Math.random() * 6) + 1;
+//     let count = 1;
+//     while (dice !== 6){
+//         //console.log(`You rolled a ${dice}`);
+//         dice = Math.trunc(Math.random() * 6) + 1;
+//         count++;
+//         if (dice === 6) repToSix.push(count);
+//     }
+//     repeticion++;
+// }
+
+// console.log(repToSix);
+
+// let maxRepToSix = 0;
+// for (let i = 0; i<repToSix.length; i++) {
+//     if (maxRepToSix < repToSix[i]) maxRepToSix = repToSix[i];
+// }
+// console.log(maxRepToSix);
