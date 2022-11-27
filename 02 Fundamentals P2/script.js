@@ -320,7 +320,7 @@ for (let rep = 1; rep <= 10 ; rep++) {
 }
 */
 
-/* Looping Arrays, Breaking and Continuing */
+/* Looping Arrays, Breaking and Continuing 
 const cristianArray = [
     'Cristian',
     'Castillo',
@@ -364,3 +364,29 @@ for (let i = 0; i < cristianArray.length; i++) {
     if (typeof cristianArray[i] === 'number') break;
     console.log(cristianArray[i], typeof cristianArray[i]);
 }
+*/
+
+/*  Looping Backwards and Loops in Loops */
+const cristianArray = [
+    'Cristian',
+    'Castillo',
+    2022 - 1989,
+    'developer',
+    ['Paco', 'Sergio', 'Castello'],
+    true
+];
+
+// 0, 1, ..., 4
+// 4, 3, ..., 0
+for (let i = cristianArray.length - 1; i >= 0; i--){
+    console.log(i, cristianArray[i], typeof cristianArray[i]);
+}
+
+for (let exercise = 1; exercise <= 3; exercise++) {
+    console.log(`------ Starting exercise ${exercise}`);
+    for (let rep = 1; rep <= 5; rep++){
+        console.log(`------- Rep ${rep} of exercise ${exercise}`);
+    }
+}
+
+/* The while Loop */
