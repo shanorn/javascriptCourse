@@ -62,7 +62,7 @@ const amplitudeNew = calcTempAmplitudNew([3, 5, 1], [9, 0, 5]);
 console.log(amplitudeNew);
 */
 
-/* Debugging with the console and breakpoints */
+/* Debugging with the console and breakpoints 
 const measureKelvin = function () {
   const measurement = {
     type: 'temp',
@@ -82,3 +82,4 @@ const measureKelvin = function () {
 
 // A) IDENTIFY
 console.log(measureKelvin());
+*/
